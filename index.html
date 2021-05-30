@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FormCurric</title>
+</head>
+<body>
+    <div class="container">
+        <menu>
+          <h1>Currículo</h1>
+        </menu>
+        <div>
+            <form action="index.php" method="POST" enctype="multipart/form-data">
+
+                <label for="nome">Informe seu nome</label>
+                <input type="text" name="nome" id="nome" size="21" required><br>
+
+                <label for="idade">Informe sua Data de nascimento</label>
+                <input type="date" name="idade" size="21" required><br>
+
+                <label for="email">Informe seu email</label>
+                <input type="email" name="email" size="21" required>
+
+                <label for="tell">Informe seu telefone</label>
+                <input type="number" name="tell" size="21" required><br>
+
+                <label for="endereco">Informe seu endereço</label>
+                <input type="text" name="endereco" size="28" required><br>
+
+                <label for="profissao">Informe sua profissão</label>
+                <input type="text" name="profissao" required><br>
+
+                <label for="cidade">Informe o nome da sua cidade</label>
+                <input type="text" name="cidade" required><br>
+
+                <label for="estado">Informe seu Estado</label>
+            <input type="text" name="estado" placeholder="PR - SP - RJ - MG - AL" required>
+            <br>
+            <label for="estadocivil" id="estadocivil">Selecione seu estado civil:</label>
+            <table>
+                <td>
+                    <input type="radio" name="estadocivil" id="solteiro" value="Solteiro(a)" checked >
+                     Solteiro(a)
+                </td>
+                <tr></tr>
+                <td>
+                    <input type="radio" name="estadocivil" id="casado" value="Casado(a)">
+                     Casado(a)
+                </td>
+            </table>
+            <label for="filho">Selecione sobre seus filhos:</label>
+            <table>
+                <td>
+                    <input type="radio" name="filho" id="sim" value="Sim">Sim
+                </td>
+                <tr></tr>
+                <td><input type="radio" name="filho" id="nao" checked>Não</td>
+            </table>
+            <fieldset>
+                <label for="experiencias" id="experiencias">Informe suas experiências:</label>
+                <textarea name="experiencias" rows="5" cols="40" id="textareaE"></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="experiencias" id="referencias">Informe suas referências:</label>
+                <textarea name="experiencias" rows="5" cols="40"></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="experiencias">Informe seus objetivos:</label>
+                <textarea name="experiencias" rows="5" cols="40" id="objetivos"></textarea>
+            </fieldset>
+            <br>
+            <label for="escolaridade">Selecione sua escolaridade:</label>
+            <table>
+                <td><input type="radio" name="escolaridade" id="fundamentalC" value="Ensino Fundamental Incompleto">
+                    Ensino Fundamental Incompleto
+                </td>
+                <tr></tr>
+                <td><input type="radio" name="escolaridade" id="fundamentalI" value="Ensino Fundamental Completo">
+                    Ensino Fundamental Completo
+                </td>   
+                <tr></tr>
+                <td>
+                    <input type="radio" name="escolaridade" id="medio" value="Ensino Médio"> Ensino Médio
+                </td>
+                <tr></tr>
+                <td>
+                    <input type="radio" name="escolaridade" id="superior" value="Ensino Superior Incompleto">
+                     Ensino Superior Incompleto
+                </td> 
+                <tr></tr>
+                <td><input type="radio" name="escolaridade" id="escolaridade" value="Ensino Superior Completo">
+                     Ensino Superior Completo
+                </td>
+            </table>
+            <fieldset>
+                <label for="experiencias" id="formacoes">Digite suas formações:</label>
+                <textarea name="experiencias" rows="5" cols="40"></textarea>
+            </fieldset> 
+            <br>
+            <label for="foto">Adicione uma foto sua</label>
+                <table>
+                    <td>
+                        <input type="file" name="foto" id="fotoperfil" value="foto">
+                    </td>
+                </table>
+            <br>
+            <button type="submit" id="button">Concluído</button>
+        </form>
+    </div>
+</section>
+    
+</body>
+</html>
